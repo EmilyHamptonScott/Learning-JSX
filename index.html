@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: Inter (weights 400–700) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Page styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Dev badge: version label (fixed top center) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing row: side-by-side plan cards -->
     <div class="cards-container">
+
+        <!-- Card: Hobby plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +47,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary CTA -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +81,43 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary CTA -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card: Enterprise plan -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO & SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Organization admin controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom contracts & invoicing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary CTA -->
+            <button class="download-button secondary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>

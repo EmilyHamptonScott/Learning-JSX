@@ -1,12 +1,20 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================================================================
+   Page — canvas & centering
+   ========================================================================== */
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #f7f7f4;
+    background-color: #f7f7f4;       /* page background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,20 +22,28 @@ body {
     padding: 20px;
 }
 
+/* ==========================================================================
+   Cards row — horizontal layout
+   ========================================================================== */
+
 .cards-container {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 24px;                       /* space between cards */
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
 }
 
+/* ==========================================================================
+   Card — shell & structure
+   ========================================================================== */
+
 .card {
     display: flex;
     flex-direction: column;
     min-height: 380px;
-    background-color: #f2f1ed;
+    background-color: #f2f1ed;       /* card surface */
     border-radius: 4px;
     padding: 16px;
     width: 320px;
@@ -39,17 +55,21 @@ body {
     flex-direction: column;
 }
 
+/* ==========================================================================
+   Card — plan name & price
+   ========================================================================== */
+
 .card-title {
     font-size: 22px;
     line-height: 28px;
     font-weight: 400;
-    color: #26251e;
+    color: #26251e;                  /* primary text */
     margin-bottom: 8px;
 }
 
 .card-price {
     font-size: 20px;
-    color: rgba(38, 37, 30, 0.5);
+    color: rgba(38, 37, 30, 0.5);    /* muted price row */
     display: inline-flex;
     align-items: baseline;
 }
@@ -61,9 +81,13 @@ body {
 }
 
 .card-price-period {
-    font-size: 14px;
+    font-size: 14px;                 /* “/mo.” suffix */
     color: rgba(38, 37, 30, 0.5);
 }
+
+/* ==========================================================================
+   Card — feature list
+   ========================================================================== */
 
 .card-content {
     margin-bottom: 32px;
@@ -71,7 +95,7 @@ body {
 
 .includes-text {
     font-size: 16px;
-    color: rgba(38, 37, 30, 0.5);
+    color: rgba(38, 37, 30, 0.5);    /* “Includes:” label */
     margin: 16px 0px;
 }
 
@@ -95,12 +119,16 @@ body {
     font-weight: 400;
 }
 
+/* ==========================================================================
+   Buttons — CTA at card bottom
+   ========================================================================== */
+
 .download-button {
-    margin-top: auto;
+    margin-top: auto;                /* pins button to bottom of card */
     width: fit-content;
-    background-color: #e6e5e0;
+    background-color: #e6e5e0;       /* secondary (Hobby) */
     border: none;
-    border-radius: 999px;
+    border-radius: 999px;            /* pill shape */
     padding: 14px 24px;
     font-size: 16px;
     font-weight: 500;
@@ -117,6 +145,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary variant (Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -129,6 +158,10 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
+
+/* ==========================================================================
+   Dev badge — version label overlay
+   ========================================================================== */
 
 .page-label {
     position: fixed;
